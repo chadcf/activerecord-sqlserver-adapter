@@ -3,13 +3,13 @@ $:.push File.expand_path("../lib", __FILE__)
 require "active_record/connection_adapters/sqlserver/version"
 
 Gem::Specification.new do |spec|
-  spec.name          = 'activerecord-sqlserver-adapter'
+  spec.name          = 'activerecord-sqlserver-adapter-cmm'
   spec.version       = ActiveRecord::ConnectionAdapters::SQLServer::Version::VERSION
   spec.platform      = Gem::Platform::RUBY
   spec.license       = 'MIT'
   spec.authors       = ['Ken Collins', 'Anna Carey', 'Will Bond', 'Murray Steele', 'Shawn Balestracci', 'Joe Rafaniello', 'Tom Ward']
   spec.email         = ['ken@metaskills.net', 'will@wbond.net']
-  spec.homepage      = 'http://github.com/rails-sqlserver/activerecord-sqlserver-adapter'
+  spec.homepage      = 'http://git.innova-partners.com/ccunningham/activerecord-sqlserver-adapter'
   spec.summary       = 'ActiveRecord SQL Server Adapter.'
   spec.description   = 'ActiveRecord SQL Server Adapter. SQL Server 2012 and upward.'
   spec.files         = `git ls-files -z`.split("\x0")

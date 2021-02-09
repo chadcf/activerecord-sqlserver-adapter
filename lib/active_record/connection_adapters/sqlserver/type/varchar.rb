@@ -19,6 +19,10 @@ module ActiveRecord
             end
           end
 
+          def quoted(value)
+            return value.quoted_id if value.respond_to?(:quoted_id)
+            Utils.quote_string_single(value)
+          end
         end
       end
     end
